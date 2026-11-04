@@ -1,4 +1,5 @@
 # 🌱 Maceta Inteligente
+<img width="858" height="402" alt="image" src="https://github.com/user-attachments/assets/e748b083-8fb5-4f5a-b74b-606e5242d22b" />
 
 Proyecto de **Gráficos por Computadora** (5.º semestre) hecho en **Unity**. Es el modelado, texturizado y renderizado en 3D de una **maceta inteligente autosuficiente**: un sistema de cultivo que se riega, se nutre y se alimenta de energía por sí mismo.
 
