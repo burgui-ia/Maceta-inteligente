@@ -1,0 +1,80 @@
+=== DIAGNOSTICO DE ESCENA Y MODELOS ===
+Fecha: 03/11/2026 10:59:00 p. m.
+
+CAMARA MAIN: pos=(1.20, 0.95, 6.97), rot=(3.08, 180.00, 0.00), fov=60, nearClip=0.03
+
+CONTROL MACETA:
+  maceta: Maceta_Tarea
+  objetivoPlantas: 03_Plantas_Follaje
+  objetivoLuz: 07B_Plafon_Luz_Crecimiento
+  objetivoAgua: 04_Sistema_Agua_Y_Riego
+  margenPlantas: 0.2
+  margenAgua: 0.25
+
+--- TODOS LOS RENDERERS EN LA ESCENA ---
+
+GO: '10_Boton_3_Nutrientes' (Path: Objeto vacio/Maceta_Tarea/Maceta_LOD0/10_Boton_3_Nutrientes)
+   Bounds Center: (0.87, 0.36, 5.21), Extents: (0.06, 0.07, 0.06), Size: (0.11, 0.15, 0.12)
+   LocalPos: (-0.36, 0.37, 0.59), WorldPos: (0.87, 0.37, 5.19)
+   Materiales:
+     [0] 'Boton_3' (Shader: Universal Render Pipeline/Lit, Color: RGBA(0.290, 0.871, 0.502, 1.000))
+
+GO: '05_Tanque_Nutrientes_NPK' (Path: Objeto vacio/Maceta_Tarea/Maceta_LOD0/05_Tanque_Nutrientes_NPK)
+   Bounds Center: (0.30, 0.42, 4.61), Extents: (0.11, 0.24, 0.11), Size: (0.22, 0.47, 0.22)
+   LocalPos: (-0.93, 0.36, 0.00), WorldPos: (0.30, 0.36, 4.61)
+   Materiales:
+     [0] 'Tanque_Nutrientes_NPK' (Shader: Universal Render Pipeline/Lit, Color: RGBA(0.063, 0.725, 0.506, 1.000))
+
+GO: '04_Sistema_Agua_Y_Riego' (Path: Objeto vacio/Maceta_Tarea/Maceta_LOD0/04_Sistema_Agua_Y_Riego)
+   Bounds Center: (1.23, 0.39, 4.72), Extents: (0.65, 0.33, 0.50), Size: (1.30, 0.66, 1.00)
+   LocalPos: (0.00, 0.00, 0.00), WorldPos: (1.23, 0.00, 4.61)
+   Materiales:
+     [0] 'Agua' (Shader: Universal Render Pipeline/Lit, Color: RGBA(0.000, 0.659, 0.953, 1.000))
+
+GO: '09_Boton_2_Riego_Agua' (Path: Objeto vacio/Maceta_Tarea/Maceta_LOD0/09_Boton_2_Riego_Agua)
+   Bounds Center: (1.09, 0.36, 5.21), Extents: (0.06, 0.07, 0.06), Size: (0.11, 0.15, 0.12)
+   LocalPos: (-0.14, 0.37, 0.59), WorldPos: (1.09, 0.37, 5.19)
+   Materiales:
+     [0] 'Boton_2' (Shader: Universal Render Pipeline/Lit, Color: RGBA(0.220, 0.741, 0.973, 1.000))
+
+GO: '02_Sustrato_Tierra' (Path: Objeto vacio/Maceta_Tarea/Maceta_LOD0/02_Sustrato_Tierra)
+   Bounds Center: (1.23, 0.48, 4.61), Extents: (0.67, 0.07, 0.42), Size: (1.34, 0.14, 0.84)
+   LocalPos: (0.00, 0.00, 0.00), WorldPos: (1.23, 0.00, 4.61)
+   Materiales:
+     [0] 'Tierra' (Shader: Universal Render Pipeline/Lit, Color: RGBA(0.169, 0.129, 0.094, 1.000))
+
+GO: '07B_Plafon_Luz_Crecimiento' (Path: Objeto vacio/Maceta_Tarea/Maceta_LOD0/07B_Plafon_Luz_Crecimiento)
+   Bounds Center: (1.23, 1.39, 4.53), Extents: (0.62, 0.02, 0.28), Size: (1.24, 0.03, 0.56)
+   LocalPos: (0.00, 0.00, 0.00), WorldPos: (1.23, 0.00, 4.61)
+   Materiales:
+     [0] 'Luz_solar' (Shader: Shader Graphs/Luz solar, Color: N/A)
+
+GO: '03_Plantas_Follaje' (Path: Objeto vacio/Maceta_Tarea/Maceta_LOD0/03_Plantas_Follaje)
+   Bounds Center: (1.25, 0.62, 4.64), Extents: (0.66, 0.08, 0.55), Size: (1.32, 0.16, 1.10)
+   LocalPos: (0.44, 0.59, 0.20), WorldPos: (1.67, 0.59, 4.81)
+   Materiales:
+     [0] 'Follaje_plantas' (Shader: Universal Render Pipeline/Lit, Color: RGBA(0.133, 0.773, 0.369, 1.000))
+
+GO: '08_Boton_1_Luz_UV' (Path: Objeto vacio/Maceta_Tarea/Maceta_LOD0/08_Boton_1_Luz_UV)
+   Bounds Center: (1.31, 0.36, 5.21), Extents: (0.06, 0.07, 0.06), Size: (0.11, 0.15, 0.12)
+   LocalPos: (0.08, 0.37, 0.59), WorldPos: (1.31, 0.37, 5.19)
+   Materiales:
+     [0] 'Boton_1' (Shader: Universal Render Pipeline/Lit, Color: RGBA(0.980, 0.800, 0.082, 1.000))
+
+GO: '07A_Panel_Solar_Autosuficiente' (Path: Objeto vacio/Maceta_Tarea/Maceta_LOD0/07A_Panel_Solar_Autosuficiente)
+   Bounds Center: (1.23, 1.54, 4.51), Extents: (0.68, 0.08, 0.34), Size: (1.36, 0.15, 0.68)
+   LocalPos: (0.00, 0.00, 0.00), WorldPos: (1.23, 0.00, 4.61)
+   Materiales:
+     [0] 'Panel solar' (Shader: Universal Render Pipeline/Lit, Color: RGBA(0.059, 0.090, 0.165, 1.000))
+
+GO: '06_Estructura_Y_Consola_Control' (Path: Objeto vacio/Maceta_Tarea/Maceta_LOD0/06_Estructura_Y_Consola_Control)
+   Bounds Center: (1.11, 0.84, 4.72), Extents: (0.74, 0.63, 0.57), Size: (1.49, 1.26, 1.13)
+   LocalPos: (0.58, 1.02, -0.42), WorldPos: (1.81, 1.02, 4.19)
+   Materiales:
+     [0] 'Carcasa' (Shader: Universal Render Pipeline/Lit, Color: RGBA(0.149, 0.196, 0.247, 1.000))
+
+GO: '01_Carcasa_Principal' (Path: Objeto vacio/Maceta_Tarea/Maceta_LOD0/01_Carcasa_Principal)
+   Bounds Center: (1.23, 0.32, 4.61), Extents: (0.77, 0.32, 0.51), Size: (1.54, 0.64, 1.02)
+   LocalPos: (0.00, 0.00, 0.00), WorldPos: (1.23, 0.00, 4.61)
+   Materiales:
+     [0] 'Carcasa' (Shader: Universal Render Pipeline/Lit, Color: RGBA(0.149, 0.196, 0.247, 1.000))
