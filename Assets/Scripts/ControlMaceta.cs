@@ -119,6 +119,9 @@ public class ControlMaceta : MonoBehaviour
             posicionOriginalGuardada = true;
         }
 
+        // Movimiento con teclado en la Vista General
+        if (GetComponent<CamaraTeclado>() == null) gameObject.AddComponent<CamaraTeclado>();
+
         var canvasExistente = FindFirstObjectByType<Canvas>();
         if (canvasExistente == null || panelInicial == null || panelBotones == null || ventanaInfo == null)
         {
@@ -343,6 +346,46 @@ public class ControlMaceta : MonoBehaviour
                 camara.nearClipPlane = 0.3f; // Intacta: 0.3f para Luz Solar, Plantas y General
         }
         CalcularDestinoCamara(nuevoModo, out posDestino, out rotDestino);
+        AplicarDetalle(nuevoModo);
+    }
+
+    // ───────────────────────── Vista General movible (ver CamaraTeclado) ─────────────────────────
+
+    public Vector3 PosicionVistaGeneral => posicionOriginal;
+
+    /// Cambia la posición de la Vista General. Si estamos en ella, la cámara se desliza hacia ahí;
+    /// si no, es a donde regresará al pulsar "Vista General".
+    public void FijarVistaGeneral(Vector3 posicion, Quaternion rotacion)
+    {
+        posicionOriginal = posicion;
+        rotacionOriginal = rotacion;
+        if (modoActual == ModoCamara.General)
+        {
+            posDestino = posicion;
+            rotDestino = rotacion;
+        }
+    }
+
+    // Baja la resolución de lo que no se está inspeccionando (ver DetalleEnfoque)
+    private DetalleEnfoque detalle;
+
+    void AplicarDetalle(ModoCamara modo)
+    {
+        if (detalle == null) detalle = FindFirstObjectByType<DetalleEnfoque>();
+        if (detalle == null)
+        {
+            detalle = gameObject.AddComponent<DetalleEnfoque>();
+            detalle.maceta = maceta;
+        }
+
+        if (modo == ModoCamara.Plantas)
+            detalle.Enfocar(posDestino, objetivoPlantas);
+        else if (modo == ModoCamara.LuzSolar)
+            detalle.Enfocar(posDestino, objetivoLuz, objetivoPlantas);
+        else if (modo == ModoCamara.PanelSolar)
+            detalle.Enfocar(posDestino, objetivoPanelSolar);
+        else
+            detalle.QuitarEnfoque();
     }
 
     // ───────────────────────── Movimiento de Cámara ─────────────────────────
