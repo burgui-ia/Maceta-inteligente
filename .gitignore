@@ -45,3 +45,9 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 .DS_Store
 Thumbs.db
+
+# Capturas para la presentación
+/Capturas/
+
+# Temporales de la compilación de Android
+/.utmp/

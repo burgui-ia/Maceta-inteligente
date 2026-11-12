@@ -25,7 +25,7 @@ public class DetalleEnfoque : MonoBehaviour
 
     [Header("Referencias")]
     public Transform maceta;
-    [Tooltip("Raíz de la casa (opcional). Se busca 'Casa_Simple' si está vacío.")]
+    [Tooltip("Raíz de la casa (opcional). Se busca 'Patio_Exterior' si está vacío.")]
     public Transform casa;
 
     [Header("Mallas de baja resolución (se llenan solas en el editor)")]
@@ -59,7 +59,8 @@ public class DetalleEnfoque : MonoBehaviour
         }
         if (casa == null)
         {
-            var go = GameObject.Find("Casa_Simple");
+            var go = GameObject.Find("Patio_Exterior");
+            if (go == null) go = GameObject.Find("Casa_Simple");
             if (go != null) casa = go.transform;
         }
 

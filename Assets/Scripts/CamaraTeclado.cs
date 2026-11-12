@@ -46,7 +46,9 @@ public class CamaraTeclado : MonoBehaviour
         distanciaMaxima = Mathf.Max(distanciaMaxima, distancia);
         giroInicial = giro; alturaInicial = altura; distanciaInicial = distancia;
 
-        var casa = GameObject.Find("Casa_Estructura");
+        // Límites del escenario (patio exterior; o la casa de versiones anteriores)
+        var casa = GameObject.Find("Patio_Estructura");
+        if (casa == null) casa = GameObject.Find("Casa_Estructura");
         if (casa != null && casa.TryGetComponent<Renderer>(out var r))
         {
             limitesCasa = r.bounds;
