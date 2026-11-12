@@ -54,3 +54,6 @@ Thumbs.db
 
 # El APK de la página de descarga (GitHub Pages) sí se sube
 !/docs/descargas/*.apk
+
+# Configuración local de Claude Code
+/.claude/
