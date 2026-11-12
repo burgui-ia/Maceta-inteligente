@@ -51,3 +51,6 @@ Thumbs.db
 
 # Temporales de la compilación de Android
 /.utmp/
+
+# El APK de la página de descarga (GitHub Pages) sí se sube
+!/docs/descargas/*.apk
